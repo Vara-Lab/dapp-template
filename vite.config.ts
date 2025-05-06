@@ -6,6 +6,12 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    allowedHosts: [
+      'localhost',
+      '3000-varalab-dapptemplate-9c1fz312gi9.ws-us118.gitpod.io'
+    ]
+  },
   plugins: [
     react(),
     nodePolyfills(),
